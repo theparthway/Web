@@ -1,9 +1,28 @@
 const colors = ["red", "green", "blue", "orange", "yellow", "cyan", "purple", "white", "black", "brown", "magenta", "tan", "olive", "maroon", "navy", "aquamarine"];
 const btn = document.querySelector(".btn");
 const color = document.querySelector(".color");
-// const colorsInput = document.querySelector(".colors");
-// const hexInput = document.querySelector(".hex");
-// const userInput = document.querySelector(".input");
+const colorsInput = document.querySelector('input[value="colors"]');
+const hexInput = document.querySelector('input[value="hex"]');
+const input = document.querySelector('input[value="input"]');
+const tb = document.querySelector('input[type="text"]');
+
+input.onclick = function() {
+    console.log("input");
+    tb.style.visibility = "visible";
+    btn.style.top = "70%";
+}
+
+colorsInput.onclick = function() {
+    console.log("color input");
+    tb.style.visibility = "hidden";
+    btn.style.top = "50%";
+}
+
+hexInput.onclick = function() {
+    console.log("hex input");
+    tb.style.visibility = "hidden";
+    btn.style.top = "50%";
+}
 
 btn.addEventListener("click", function () {
     const rbs = document.querySelectorAll('input[type="radio"]');
