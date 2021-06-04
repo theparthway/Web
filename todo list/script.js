@@ -6,7 +6,7 @@ btn.addEventListener('click', function () {
     let li = document.createElement('li');
     let b = document.createElement('button');
     li.textContent = tb.value;
-    b.textContent = "x";
+    b.textContent = "X";
     ul.appendChild(li);
     li.appendChild(b);
     tb.value = "";
