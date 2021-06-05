@@ -72,7 +72,6 @@ a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-
     text-decoration: none;
     text-align: center;
     color: var(--clr-vermillion);
