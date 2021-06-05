@@ -1,3 +1,7 @@
+body {
+    background-color: aquamarine;
+}
+
 .header {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -41,4 +45,23 @@
     top: 15.4%;
     left: 49.6%;
     opacity: 0.8;
+}
+
+a {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    margin: 50px 0px;
+    position: absolute;
+    left: 50%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    width: 60px;
+}
+
+a:hover {
+    color: white;
+    background-color: blue;
 }

@@ -68,11 +68,22 @@ img {
     /* border-radius: 25px; */
 }
 
-button {
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    text-align: center;
     color: var(--clr-vermillion);
     background-color: var(--clr-clean);
     font-weight: bold;
     width: 60px;
+}
+
+a.button:hover {
+    background-color: var(--clr-vermillion);
+    color: var(--clr-clean);
 }
 
 .row:after {
