@@ -1,8 +1,0 @@
-#boardContainer {
-    background: yellow;
-    width: 40vw;
-    height: 40vw;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-}

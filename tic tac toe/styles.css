@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --cell-size: 100px;
+    --mark-size: cal(var(--cell-size) * 0.9)
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to right, #EDE574, #E1F5C4);
+}
+
+.header {
+    text-align: center;
+    padding: 70px 0 90px;
+}
+
+h3 {
+    display: inline;
+}
+
+.board {
+    width: 100vw;
+    height: 20vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-size: 5rem;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n+1) {
+    border-left: none;
+}
+
+.cell:nth-child(3n) {
+    border-right: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:last-child {
+    border-bottom: none;
+}
+
+.btn-container {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.btn-container button {
+    width: 40%;
+}
