@@ -20,13 +20,16 @@ h2 {
 
 .leftcolumn {
     border-right: 10px solid black;
-    background-color: white;
+    background-color: #EDBD3E;
     float: left;
     width: 33.33%;
     height: 100vh;
+    /* padding-bottom: 100%; */
 }
 
 .middlecolumn {
+    background-color: #495E88;
+    color: white;
     border-right: 10px solid black;
     float: left;
     width: 33.33%;
@@ -35,10 +38,10 @@ h2 {
 }
 
 .rightcolumn {
-    background-color: white;
+    background-color: #A0AEC1;
     float: left;
-    width: 33.33%;
     height: 100vh;
+    width: 33.33%;
 }
 
 table {
@@ -55,6 +58,7 @@ table tr:nth-child(n+3) {
 
 th {
     height: 50px;
+    padding-top: 20px;
     font-weight: bolder;
     font-size: larger;
 }
@@ -87,9 +91,15 @@ button {
 }
 
 img {
-    width:100%;
+    width: 100%;
     margin: 0 auto;
     cursor: pointer;
+}
+
+td img {
+    height: 64px;
+    width:64px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 800px) {
